@@ -3,12 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		022A9A0522A91CA30095BB07 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 022A9A0422A91CA30095BB07 /* GoogleService-Info.plist */; };
+		022A9A0922A93F290095BB07 /* HighScoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A9A0822A93F290095BB07 /* HighScoreCell.swift */; };
+		022A9A0B22A940160095BB07 /* HigScoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A9A0A22A940160095BB07 /* HigScoreData.swift */; };
+		022A9A0F22A994500095BB07 /* SceneExplosion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A9A0E22A994500095BB07 /* SceneExplosion.swift */; };
+		022A9A1322A9B5AE0095BB07 /* gameOver.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 022A9A1222A9B5AE0095BB07 /* gameOver.atlas */; };
 		02478A1C22648469003E94D9 /* EndGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02478A1B22648469003E94D9 /* EndGameView.swift */; };
 		02958256225693530087846C /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02958255225693530087846C /* Game.swift */; };
+		02AF136522ADBA9F00EC72A9 /* youWin.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 02AF136422ADBA9F00EC72A9 /* youWin.m4a */; };
+		02AF136B22ADC3BC00EC72A9 /* gameOver.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 02AF136A22ADC3BC00EC72A9 /* gameOver.mp3 */; };
 		02E3BF6922527BC4001AB596 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E3BF6822527BC4001AB596 /* AppDelegate.swift */; };
 		02E3BF6B22527BC4001AB596 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E3BF6A22527BC4001AB596 /* ViewController.swift */; };
 		02E3BF6E22527BC4001AB596 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02E3BF6C22527BC4001AB596 /* Main.storyboard */; };
@@ -19,6 +26,10 @@
 		02E3BFD32253EE40001AB596 /* GamePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E3BFD22253EE40001AB596 /* GamePage.swift */; };
 		02E3BFE52254E377001AB596 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E3BFE42254E377001AB596 /* CollectionViewCell.swift */; };
 		02E3BFE722551F4B001AB596 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E3BFE622551F4B001AB596 /* Cell.swift */; };
+		02F482E022959F8A00E200BA /* HighScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F482DF22959F8A00E200BA /* HighScoreViewController.swift */; };
+		4FBB81B05F59F0FF1436087B /* Pods_Minesweeper_2019B.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCDE96A674A5D0A33E812435 /* Pods_Minesweeper_2019B.framework */; };
+		818280B930CBFCE313DF936F /* Pods_Minesweeper_2019BTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0773A551ED2A912607002A5F /* Pods_Minesweeper_2019BTests.framework */; };
+		CE71E51B338F8735172BC3C7 /* Pods_Minesweeper_2019BUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 346CEA1341A42885E23DE48D /* Pods_Minesweeper_2019BUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +50,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		022A9A0422A91CA30095BB07 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		022A9A0822A93F290095BB07 /* HighScoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreCell.swift; sourceTree = "<group>"; };
+		022A9A0A22A940160095BB07 /* HigScoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HigScoreData.swift; sourceTree = "<group>"; };
+		022A9A0E22A994500095BB07 /* SceneExplosion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneExplosion.swift; sourceTree = "<group>"; };
+		022A9A1222A9B5AE0095BB07 /* gameOver.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = gameOver.atlas; path = ../../../../gameOver.atlas; sourceTree = "<group>"; };
 		02478A1B22648469003E94D9 /* EndGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGameView.swift; sourceTree = "<group>"; };
 		02958255225693530087846C /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		02AF136422ADBA9F00EC72A9 /* youWin.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = youWin.m4a; sourceTree = "<group>"; };
+		02AF136A22ADC3BC00EC72A9 /* gameOver.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = gameOver.mp3; path = ../../../../../Downloads/gameOver.mp3; sourceTree = "<group>"; };
 		02E3BF6522527BC4001AB596 /* Minesweeper@2019B.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Minesweeper@2019B.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		02E3BF6822527BC4001AB596 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02E3BF6A22527BC4001AB596 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +75,16 @@
 		02E3BFD22253EE40001AB596 /* GamePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePage.swift; sourceTree = "<group>"; };
 		02E3BFE42254E377001AB596 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		02E3BFE622551F4B001AB596 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		02F482DF22959F8A00E200BA /* HighScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreViewController.swift; sourceTree = "<group>"; };
+		0773A551ED2A912607002A5F /* Pods_Minesweeper_2019BTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Minesweeper_2019BTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EED7257B000366E6D8B2F30 /* Pods-Minesweeper@2019BUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Minesweeper@2019BUITests.release.xcconfig"; path = "Target Support Files/Pods-Minesweeper@2019BUITests/Pods-Minesweeper@2019BUITests.release.xcconfig"; sourceTree = "<group>"; };
+		235E56E97CB74A2B3E85D845 /* Pods-Minesweeper@2019BTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Minesweeper@2019BTests.release.xcconfig"; path = "Target Support Files/Pods-Minesweeper@2019BTests/Pods-Minesweeper@2019BTests.release.xcconfig"; sourceTree = "<group>"; };
+		346CEA1341A42885E23DE48D /* Pods_Minesweeper_2019BUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Minesweeper_2019BUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A458062940F9CD6B493C931C /* Pods-Minesweeper@2019B.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Minesweeper@2019B.debug.xcconfig"; path = "Target Support Files/Pods-Minesweeper@2019B/Pods-Minesweeper@2019B.debug.xcconfig"; sourceTree = "<group>"; };
+		AE00B5A2EC7ABA7F8C680A67 /* Pods-Minesweeper@2019B.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Minesweeper@2019B.release.xcconfig"; path = "Target Support Files/Pods-Minesweeper@2019B/Pods-Minesweeper@2019B.release.xcconfig"; sourceTree = "<group>"; };
+		C6C32A6AD8F0204F3F520B2E /* Pods-Minesweeper@2019BTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Minesweeper@2019BTests.debug.xcconfig"; path = "Target Support Files/Pods-Minesweeper@2019BTests/Pods-Minesweeper@2019BTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CCDE96A674A5D0A33E812435 /* Pods_Minesweeper_2019B.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Minesweeper_2019B.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4A25CA9D79742C235DA37DF /* Pods-Minesweeper@2019BUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Minesweeper@2019BUITests.debug.xcconfig"; path = "Target Support Files/Pods-Minesweeper@2019BUITests/Pods-Minesweeper@2019BUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FBB81B05F59F0FF1436087B /* Pods_Minesweeper_2019B.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				818280B930CBFCE313DF936F /* Pods_Minesweeper_2019BTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE71E51B338F8735172BC3C7 /* Pods_Minesweeper_2019BUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +122,8 @@
 				02E3BF7C22527BC5001AB596 /* Minesweeper@2019BTests */,
 				02E3BF8722527BC5001AB596 /* Minesweeper@2019BUITests */,
 				02E3BF6622527BC4001AB596 /* Products */,
+				A8E07104235AB8A6CBBE840E /* Pods */,
+				19B652BE702981F4BA5872DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,17 +140,25 @@
 		02E3BF6722527BC4001AB596 /* Minesweeper@2019B */ = {
 			isa = PBXGroup;
 			children = (
+				022A9A1222A9B5AE0095BB07 /* gameOver.atlas */,
 				02E3BF6822527BC4001AB596 /* AppDelegate.swift */,
 				02E3BF6A22527BC4001AB596 /* ViewController.swift */,
 				02E3BFD22253EE40001AB596 /* GamePage.swift */,
+				022A9A0422A91CA30095BB07 /* GoogleService-Info.plist */,
 				02958255225693530087846C /* Game.swift */,
 				02E3BFE622551F4B001AB596 /* Cell.swift */,
 				02478A1B22648469003E94D9 /* EndGameView.swift */,
 				02E3BF6C22527BC4001AB596 /* Main.storyboard */,
+				02AF136422ADBA9F00EC72A9 /* youWin.m4a */,
+				02AF136A22ADC3BC00EC72A9 /* gameOver.mp3 */,
 				02E3BF6F22527BC5001AB596 /* Assets.xcassets */,
 				02E3BF7122527BC5001AB596 /* LaunchScreen.storyboard */,
 				02E3BF7422527BC5001AB596 /* Info.plist */,
 				02E3BFE42254E377001AB596 /* CollectionViewCell.swift */,
+				02F482DF22959F8A00E200BA /* HighScoreViewController.swift */,
+				022A9A0E22A994500095BB07 /* SceneExplosion.swift */,
+				022A9A0A22A940160095BB07 /* HigScoreData.swift */,
+				022A9A0822A93F290095BB07 /* HighScoreCell.swift */,
 			);
 			path = "Minesweeper@2019B";
 			sourceTree = "<group>";
@@ -140,6 +181,29 @@
 			path = "Minesweeper@2019BUITests";
 			sourceTree = "<group>";
 		};
+		19B652BE702981F4BA5872DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCDE96A674A5D0A33E812435 /* Pods_Minesweeper_2019B.framework */,
+				0773A551ED2A912607002A5F /* Pods_Minesweeper_2019BTests.framework */,
+				346CEA1341A42885E23DE48D /* Pods_Minesweeper_2019BUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A8E07104235AB8A6CBBE840E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A458062940F9CD6B493C931C /* Pods-Minesweeper@2019B.debug.xcconfig */,
+				AE00B5A2EC7ABA7F8C680A67 /* Pods-Minesweeper@2019B.release.xcconfig */,
+				C6C32A6AD8F0204F3F520B2E /* Pods-Minesweeper@2019BTests.debug.xcconfig */,
+				235E56E97CB74A2B3E85D845 /* Pods-Minesweeper@2019BTests.release.xcconfig */,
+				D4A25CA9D79742C235DA37DF /* Pods-Minesweeper@2019BUITests.debug.xcconfig */,
+				1EED7257B000366E6D8B2F30 /* Pods-Minesweeper@2019BUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +211,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 02E3BF8D22527BC5001AB596 /* Build configuration list for PBXNativeTarget "Minesweeper@2019B" */;
 			buildPhases = (
+				2FE4422B18EFDCAFDCEDEF05 /* [CP] Check Pods Manifest.lock */,
 				02E3BF6122527BC4001AB596 /* Sources */,
 				02E3BF6222527BC4001AB596 /* Frameworks */,
 				02E3BF6322527BC4001AB596 /* Resources */,
+				5388595429D7F0B1112398B5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -164,6 +230,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 02E3BF9022527BC5001AB596 /* Build configuration list for PBXNativeTarget "Minesweeper@2019BTests" */;
 			buildPhases = (
+				35946CCA6605D3698F7792CC /* [CP] Check Pods Manifest.lock */,
 				02E3BF7522527BC5001AB596 /* Sources */,
 				02E3BF7622527BC5001AB596 /* Frameworks */,
 				02E3BF7722527BC5001AB596 /* Resources */,
@@ -182,6 +249,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 02E3BF9322527BC5001AB596 /* Build configuration list for PBXNativeTarget "Minesweeper@2019BUITests" */;
 			buildPhases = (
+				F97782A4AD31402A0D494012 /* [CP] Check Pods Manifest.lock */,
 				02E3BF8022527BC5001AB596 /* Sources */,
 				02E3BF8122527BC5001AB596 /* Frameworks */,
 				02E3BF8222527BC5001AB596 /* Resources */,
@@ -244,9 +312,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02AF136522ADBA9F00EC72A9 /* youWin.m4a in Resources */,
 				02E3BF7322527BC5001AB596 /* LaunchScreen.storyboard in Resources */,
+				022A9A0522A91CA30095BB07 /* GoogleService-Info.plist in Resources */,
 				02E3BF7022527BC5001AB596 /* Assets.xcassets in Resources */,
+				022A9A1322A9B5AE0095BB07 /* gameOver.atlas in Resources */,
 				02E3BF6E22527BC4001AB596 /* Main.storyboard in Resources */,
+				02AF136B22ADC3BC00EC72A9 /* gameOver.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,14 +338,104 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2FE4422B18EFDCAFDCEDEF05 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Minesweeper@2019B-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		35946CCA6605D3698F7792CC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Minesweeper@2019BTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5388595429D7F0B1112398B5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Minesweeper@2019B/Pods-Minesweeper@2019B-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Minesweeper@2019B/Pods-Minesweeper@2019B-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Minesweeper@2019B/Pods-Minesweeper@2019B-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F97782A4AD31402A0D494012 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Minesweeper@2019BUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		02E3BF6122527BC4001AB596 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				022A9A0922A93F290095BB07 /* HighScoreCell.swift in Sources */,
 				02478A1C22648469003E94D9 /* EndGameView.swift in Sources */,
 				02E3BFE52254E377001AB596 /* CollectionViewCell.swift in Sources */,
+				022A9A0B22A940160095BB07 /* HigScoreData.swift in Sources */,
 				02958256225693530087846C /* Game.swift in Sources */,
+				022A9A0F22A994500095BB07 /* SceneExplosion.swift in Sources */,
+				02F482E022959F8A00E200BA /* HighScoreViewController.swift in Sources */,
 				02E3BF6B22527BC4001AB596 /* ViewController.swift in Sources */,
 				02E3BFE722551F4B001AB596 /* Cell.swift in Sources */,
 				02E3BF6922527BC4001AB596 /* AppDelegate.swift in Sources */,
@@ -450,6 +612,7 @@
 		};
 		02E3BF8E22527BC5001AB596 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A458062940F9CD6B493C931C /* Pods-Minesweeper@2019B.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -469,6 +632,7 @@
 		};
 		02E3BF8F22527BC5001AB596 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE00B5A2EC7ABA7F8C680A67 /* Pods-Minesweeper@2019B.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -488,6 +652,7 @@
 		};
 		02E3BF9122527BC5001AB596 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6C32A6AD8F0204F3F520B2E /* Pods-Minesweeper@2019BTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +673,7 @@
 		};
 		02E3BF9222527BC5001AB596 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 235E56E97CB74A2B3E85D845 /* Pods-Minesweeper@2019BTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -528,9 +694,11 @@
 		};
 		02E3BF9422527BC5001AB596 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4A25CA9D79742C235DA37DF /* Pods-Minesweeper@2019BUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P4LLM6MQP8;
 				INFOPLIST_FILE = "Minesweeper@2019BUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -547,9 +715,11 @@
 		};
 		02E3BF9522527BC5001AB596 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EED7257B000366E6D8B2F30 /* Pods-Minesweeper@2019BUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P4LLM6MQP8;
 				INFOPLIST_FILE = "Minesweeper@2019BUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

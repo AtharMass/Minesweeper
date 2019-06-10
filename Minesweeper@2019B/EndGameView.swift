@@ -15,7 +15,6 @@ class EndGameView: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       // statusEnd.image = UIImage(named: "youWon");
         setupView()
     }
     

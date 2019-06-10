@@ -7,16 +7,27 @@
 //
 
 import UIKit
+import MapKit
+import SpriteKit
+import CoreLocation
+import FirebaseDatabase
+import AVFoundation
 
-class GamePage: UIViewController ,UICollectionViewDelegate,UICollectionViewDataSource{
+class GamePage: UIViewController ,UICollectionViewDelegate,UICollectionViewDataSource, CLLocationManagerDelegate{
     
-    
+    @IBOutlet weak var animateView: SKView!
     @IBOutlet weak var playerName: UILabel!
     @IBOutlet weak var faceLogoButton : UIButton!
     @IBOutlet weak var mineLeft: UILabel!
     @IBOutlet weak var gameBoardView: UICollectionView!
     @IBOutlet weak  var timer_count: UILabel!
+    @IBOutlet weak var animateImage: UIImageView!
     
+    var winner: HigScoreData = HigScoreData(name: "", score: 0, lat: 0, lng: 0, difficulty: "");
+    var save: DatabaseReference! = Database.database().reference();
+    var scene:SceneExplosion?
+    var locationManager = CLLocationManager()
+    var audioPlayer:AVAudioPlayer?
     struct GameVariables {
         static var num :Int = 0
         static var totalMines :Int = 0
@@ -51,6 +62,8 @@ class GamePage: UIViewController ,UICollectionViewDelegate,UICollectionViewDataS
         }else{
             setBoard(s_width :30)
         }
+        
+        winner.SetName(name: ViewController.MyVariables.nameOfPlayer)
 
         game = Game(boardSize: boardSize, minesTotal: bombCount);
         
@@ -58,9 +71,23 @@ class GamePage: UIViewController ,UICollectionViewDelegate,UICollectionViewDataS
         self.gameTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(countUpAction), userInfo: nil, repeats: true)
 
         //Hide Keyboard when click any where
+        
         self.hideKeyboardWhenTappedAround()
+        animateView.isHidden = true
+        animateImage.isHidden = true
+        
+        self.scene = SceneExplosion(size: CGSize(width: self.animateView.frame.size.width, height: self.animateView.frame.size.height));
+        self.animateView.presentScene(scene);
+        
+        self.locationManager.requestWhenInUseAuthorization()
+        if(CLLocationManager.locationServicesEnabled()) {
+            locationManager.delegate = self;
+            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            locationManager.startUpdatingLocation();
+        }
+
     }
-    
+
     //Function to hide keyboard
     func hideKeyboardWhenTappedAround() {
         let tap: UITapGestureRecognizer =     UITapGestureRecognizer(target: self, action:    #selector(dismissKeyboard))
@@ -122,7 +149,7 @@ class GamePage: UIViewController ,UICollectionViewDelegate,UICollectionViewDataS
         }else{
             setBoard(s_width :30)
         }
-        gameBoardView.reloadData()
+        
        
     }
     
@@ -146,6 +173,48 @@ class GamePage: UIViewController ,UICollectionViewDelegate,UICollectionViewDataS
     func endGame() {
         self.gameTimer.invalidate();
         
+        if(GameVariables.gameStatus == "GameOver"){
+           
+            guard let path = Bundle.main.path(forResource: "gameOver", ofType: "mp3")else{return}
+            let url = URL(fileURLWithPath: path)
+            self.audioPlayer = try? AVAudioPlayer(contentsOf: url, fileTypeHint: nil)
+            self.audioPlayer?.prepareToPlay()
+            self.audioPlayer?.play()
+            
+           
+            self.animateView.isHidden = false;
+            self.animateView.isOpaque = false;
+            self.animateView.allowsTransparency = true;
+            if let scene = self.scene {
+                scene.playAnimation();
+            }
+        }
+        if(GameVariables.gameStatus == "Won"){
+            guard let path = Bundle.main.path(forResource: "youWin", ofType: "m4a")else{return}
+            let url = URL(fileURLWithPath: path)
+            self.audioPlayer = try? AVAudioPlayer(contentsOf: url, fileTypeHint: nil)
+            self.audioPlayer?.prepareToPlay()
+            self.audioPlayer?.play()
+            
+            animateImage.isHidden = false
+            self.animateImage.alpha = 0.0
+            self.animateImage.layer.cornerRadius = 2.0
+            if self.animateImage.alpha == 0.0 {
+                //show us the view with fade in animations
+                UIView.animate(withDuration: 3, delay: 0.5, options: .curveEaseOut, animations: {
+                    self.animateImage.alpha = 1.0
+                })
+                
+            }
+            
+            let locat = self.locationManager.location?.coordinate ?? CLLocationCoordinate2D(latitude: 0, longitude: 0);
+            self.winner.SetLat(lat: locat.latitude);
+            self.winner.SetLng(lng: locat.longitude);
+            self.winner.SetName(name: ViewController.MyVariables.nameOfPlayer);
+            self.winner.SetScore(score: self.count );
+            self.winner.SetDifficulty(difficulty: ViewController.MyVariables.levelDifficulty);
+            self.save.child("users").child(self.winner.GetName()).setValue(self.winner.GetDictionary());
+        }
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3), execute: {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "EndGame") as! EndGameView
@@ -177,7 +246,7 @@ class GamePage: UIViewController ,UICollectionViewDelegate,UICollectionViewDataS
         let cellType = cellData.GetCellType();
         
         switch cellType {
-            
+        
         case Cell.State.Flag:
             if(cell.imageView.image != nil) {
                  cell.imageView.image = UIImage(named: "btnflag");
@@ -248,7 +317,6 @@ class GamePage: UIViewController ,UICollectionViewDelegate,UICollectionViewDataS
        if(pressedCell.gameStatus == "GameOver") {
             GameVariables.gameStatus = "GameOver"
             faceLogoButton.setBackgroundImage(UIImage(named: "cry"), for: UIControl.State.normal)
-            //.imageView!.image = UIImage(named: "cry")
             endGame();
         }
        else{

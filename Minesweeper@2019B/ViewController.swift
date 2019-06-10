@@ -7,14 +7,17 @@
 //
 
 import UIKit
+import SpriteKit
 
 class ViewController: UIViewController , UIPickerViewDelegate,UIPickerViewDataSource{
   
+    @IBOutlet weak var animateView: SKView!
     @IBOutlet weak var textLevel: UITextField!
     @IBOutlet weak var pickerLevels: UIPickerView!
     @IBOutlet weak var playerName: UITextField!
     @IBOutlet weak var gameView: GamePage!
-    
+    var scene:SceneExplosion?
+
     //create list
     var list: [String] = [String]()
     //GLOBAL VARIABLE
@@ -37,6 +40,8 @@ class ViewController: UIViewController , UIPickerViewDelegate,UIPickerViewDataSo
         
         //Hide Keyboard when click any where
         self.hideKeyboardWhenTappedAround()
+        
+       
         
     }
     

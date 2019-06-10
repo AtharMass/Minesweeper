@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>207074180554-fh7tntoa3q0f9cifb5jvro7nn6au4io2.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.207074180554-fh7tntoa3q0f9cifb5jvro7nn6au4io2</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB7ALS8PrnwywGqa7hz7ReA0bV6iE4ndfM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>207074180554</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>athar.Minesweeper-2019B</string>
+	<key>PROJECT_ID</key>
+	<string>minesweeper-1b346</string>
+	<key>STORAGE_BUCKET</key>
+	<string>minesweeper-1b346.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:207074180554:ios:ecc798638491945e</string>
+	<key>DATABASE_URL</key>
+	<string>https://minesweeper-1b346.firebaseio.com</string>
+</dict>
+</plist>

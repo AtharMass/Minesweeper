@@ -28,33 +28,12 @@ class CollectionViewCell: UICollectionViewCell {
         //Resize Image View
         let new_size = CGSize(width: size_changed, height: size_changed)
         self.imageView.frame.size = new_size
-        
         self.imageView.image = UIImage(named: "button")
         self.imageView.contentMode = .scaleAspectFill
-    }
-    
-    /*func onDraw(size_changed: Int){
-       
-        self.imageView.image = UIImage(named: "button_1")
-        self.imageView.contentMode = .scaleAspectFill
-    }
-    func setFlag(){
-        self.isUserInteractionEnabled = true
-        let long = UILongPressGestureRecognizer(target: self, action: #selector(self.longPress))
-        self.addGestureRecognizer(long)
-    }
-    @objc func longPress(){
-        if  self.imageView.image == UIImage(named: "button"){
-            print("1")
-             self.imageView.image = UIImage(named: "button_flag")
-        }else{
-            if   self.imageView.image == UIImage(named: "button_flag"){
-                 print("2")
-                self.imageView.image = UIImage(named: "button")
-            }
+        if( self.imageView.image != nil){
+            self.imageView.image = UIImage(named: "button")
+            self.imageView.contentMode = .scaleAspectFill
         }
-    }*/
-    
-   
+    }
     
 }
