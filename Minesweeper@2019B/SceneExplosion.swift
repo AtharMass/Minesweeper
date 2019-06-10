@@ -21,7 +21,7 @@ class SceneExplosion: SKScene {
         self.backgroundColor = UIColor.white
         var frames:[SKTexture] = []
         
-        let gameOverAtlas = SKTextureAtlas(named: "gameOver")
+        let gameOverAtlas = SKTextureAtlas(named: "explosion")
         
         for index in 0 ... 13 {
             let textureName = "gameOver_\(index)"

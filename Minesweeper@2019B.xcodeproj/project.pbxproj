@@ -11,11 +11,11 @@
 		022A9A0922A93F290095BB07 /* HighScoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A9A0822A93F290095BB07 /* HighScoreCell.swift */; };
 		022A9A0B22A940160095BB07 /* HigScoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A9A0A22A940160095BB07 /* HigScoreData.swift */; };
 		022A9A0F22A994500095BB07 /* SceneExplosion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A9A0E22A994500095BB07 /* SceneExplosion.swift */; };
-		022A9A1322A9B5AE0095BB07 /* gameOver.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 022A9A1222A9B5AE0095BB07 /* gameOver.atlas */; };
 		02478A1C22648469003E94D9 /* EndGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02478A1B22648469003E94D9 /* EndGameView.swift */; };
 		02958256225693530087846C /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02958255225693530087846C /* Game.swift */; };
 		02AF136522ADBA9F00EC72A9 /* youWin.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 02AF136422ADBA9F00EC72A9 /* youWin.m4a */; };
-		02AF136B22ADC3BC00EC72A9 /* gameOver.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 02AF136A22ADC3BC00EC72A9 /* gameOver.mp3 */; };
+		02C443BB22AE9D4A009196EE /* gameOverSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 02C443BA22AE9D49009196EE /* gameOverSound.mp3 */; };
+		02C443BD22AE9DA9009196EE /* explosion.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 02C443BC22AE9DA9009196EE /* explosion.atlas */; };
 		02E3BF6922527BC4001AB596 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E3BF6822527BC4001AB596 /* AppDelegate.swift */; };
 		02E3BF6B22527BC4001AB596 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E3BF6A22527BC4001AB596 /* ViewController.swift */; };
 		02E3BF6E22527BC4001AB596 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02E3BF6C22527BC4001AB596 /* Main.storyboard */; };
@@ -54,11 +54,11 @@
 		022A9A0822A93F290095BB07 /* HighScoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreCell.swift; sourceTree = "<group>"; };
 		022A9A0A22A940160095BB07 /* HigScoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HigScoreData.swift; sourceTree = "<group>"; };
 		022A9A0E22A994500095BB07 /* SceneExplosion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneExplosion.swift; sourceTree = "<group>"; };
-		022A9A1222A9B5AE0095BB07 /* gameOver.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = gameOver.atlas; path = ../../../../gameOver.atlas; sourceTree = "<group>"; };
 		02478A1B22648469003E94D9 /* EndGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGameView.swift; sourceTree = "<group>"; };
 		02958255225693530087846C /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		02AF136422ADBA9F00EC72A9 /* youWin.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = youWin.m4a; sourceTree = "<group>"; };
-		02AF136A22ADC3BC00EC72A9 /* gameOver.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = gameOver.mp3; path = ../../../../../Downloads/gameOver.mp3; sourceTree = "<group>"; };
+		02C443BA22AE9D49009196EE /* gameOverSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = gameOverSound.mp3; path = ../../../../gameOverSound.mp3; sourceTree = "<group>"; };
+		02C443BC22AE9DA9009196EE /* explosion.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = explosion.atlas; sourceTree = "<group>"; };
 		02E3BF6522527BC4001AB596 /* Minesweeper@2019B.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Minesweeper@2019B.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		02E3BF6822527BC4001AB596 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02E3BF6A22527BC4001AB596 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -140,7 +140,7 @@
 		02E3BF6722527BC4001AB596 /* Minesweeper@2019B */ = {
 			isa = PBXGroup;
 			children = (
-				022A9A1222A9B5AE0095BB07 /* gameOver.atlas */,
+				02C443BC22AE9DA9009196EE /* explosion.atlas */,
 				02E3BF6822527BC4001AB596 /* AppDelegate.swift */,
 				02E3BF6A22527BC4001AB596 /* ViewController.swift */,
 				02E3BFD22253EE40001AB596 /* GamePage.swift */,
@@ -149,8 +149,8 @@
 				02E3BFE622551F4B001AB596 /* Cell.swift */,
 				02478A1B22648469003E94D9 /* EndGameView.swift */,
 				02E3BF6C22527BC4001AB596 /* Main.storyboard */,
+				02C443BA22AE9D49009196EE /* gameOverSound.mp3 */,
 				02AF136422ADBA9F00EC72A9 /* youWin.m4a */,
-				02AF136A22ADC3BC00EC72A9 /* gameOver.mp3 */,
 				02E3BF6F22527BC5001AB596 /* Assets.xcassets */,
 				02E3BF7122527BC5001AB596 /* LaunchScreen.storyboard */,
 				02E3BF7422527BC5001AB596 /* Info.plist */,
@@ -316,9 +316,9 @@
 				02E3BF7322527BC5001AB596 /* LaunchScreen.storyboard in Resources */,
 				022A9A0522A91CA30095BB07 /* GoogleService-Info.plist in Resources */,
 				02E3BF7022527BC5001AB596 /* Assets.xcassets in Resources */,
-				022A9A1322A9B5AE0095BB07 /* gameOver.atlas in Resources */,
+				02C443BB22AE9D4A009196EE /* gameOverSound.mp3 in Resources */,
 				02E3BF6E22527BC4001AB596 /* Main.storyboard in Resources */,
-				02AF136B22ADC3BC00EC72A9 /* gameOver.mp3 in Resources */,
+				02C443BD22AE9DA9009196EE /* explosion.atlas in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
