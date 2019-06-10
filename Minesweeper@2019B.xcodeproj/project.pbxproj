@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0214475722AEA0CD00BCDEAA /* sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0214475622AEA0CD00BCDEAA /* sound.mp3 */; };
 		022A9A0522A91CA30095BB07 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 022A9A0422A91CA30095BB07 /* GoogleService-Info.plist */; };
 		022A9A0922A93F290095BB07 /* HighScoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A9A0822A93F290095BB07 /* HighScoreCell.swift */; };
 		022A9A0B22A940160095BB07 /* HigScoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A9A0A22A940160095BB07 /* HigScoreData.swift */; };
@@ -50,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0214475622AEA0CD00BCDEAA /* sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound.mp3; sourceTree = "<group>"; };
 		022A9A0422A91CA30095BB07 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		022A9A0822A93F290095BB07 /* HighScoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreCell.swift; sourceTree = "<group>"; };
 		022A9A0A22A940160095BB07 /* HigScoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HigScoreData.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				02E3BFE622551F4B001AB596 /* Cell.swift */,
 				02478A1B22648469003E94D9 /* EndGameView.swift */,
 				02E3BF6C22527BC4001AB596 /* Main.storyboard */,
+				0214475622AEA0CD00BCDEAA /* sound.mp3 */,
 				02C443BA22AE9D49009196EE /* gameOverSound.mp3 */,
 				02AF136422ADBA9F00EC72A9 /* youWin.m4a */,
 				02E3BF6F22527BC5001AB596 /* Assets.xcassets */,
@@ -312,6 +315,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0214475722AEA0CD00BCDEAA /* sound.mp3 in Resources */,
 				02AF136522ADBA9F00EC72A9 /* youWin.m4a in Resources */,
 				02E3BF7322527BC5001AB596 /* LaunchScreen.storyboard in Resources */,
 				022A9A0522A91CA30095BB07 /* GoogleService-Info.plist in Resources */,

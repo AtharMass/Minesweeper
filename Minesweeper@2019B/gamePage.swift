@@ -175,7 +175,7 @@ class GamePage: UIViewController ,UICollectionViewDelegate,UICollectionViewDataS
         
         if(GameVariables.gameStatus == "GameOver"){
            
-            guard let path = Bundle.main.path(forResource: "gameOverSound", ofType: "mp3")else{return}
+            guard let path = Bundle.main.path(forResource: "sound", ofType: "mp3")else{return}
             let url = URL(fileURLWithPath: path)
             self.audioPlayer = try? AVAudioPlayer(contentsOf: url, fileTypeHint: nil)
             self.audioPlayer?.prepareToPlay()
